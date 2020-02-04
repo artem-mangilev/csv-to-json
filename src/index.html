@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <label for="csv-file-input">Choose CSV file: </label>
+  <input type="file" id="csv-file-input" name="csv-file-input" accept=".csv">
+
+  <p>Put your CSV here: </p>
+  <textarea name="csv-input" id="csv-input" rows="20" cols="50" wrap="off"></textarea>
+
+  <button id="convert-button">Convert</button>
+
+  <div>
+    <p>Options:</p>
+    <input type="checkbox" id="minify" name="minify">
+    <label for="minify">Minify</label>
+  </div>
+
+  <p>JSON output: </p>
+  <textarea name="json-output" id="json-output" rows="20" cols="50" wrap="off"></textarea>
+  <div id="save">
+    <label for="file-name">Enter the name of the file and save it</label>
+    <input type="text" name="file-name" id="file-name">
+    <button id="save-button">Save</button>
+    <button id="copy-button">Copy</button>
+  </div>
+
+
+  <script src="./index.js"></script>
+</body>
+</html>
